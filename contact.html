@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz</title>
+    <style>
+    body { background-color: yellow; }
+    </style>
+</head>
+<body>
+<form>
+    <div class="form-grup">
+        <label for="PodajImie">Imie</label>
+        <input type="text" name="PodajImie" placeholder="Imię">
+    </div>
+    <div class="form-grup">
+        <label for="PodajNazwisko">Nazwisko</label>
+        <input type="text" name="PodajNazwisko" placeholder="Nazwisko">
+    </div>
+    <div class="form-grup">
+        <label for="WIEK">WIEK</label>
+        <input type="number" name="WIEK" placeholder="WIEK">
+    </div>
+    <div class="form-grup">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Podaj email">
+        <small id="emailHelp" class="form-text text-muted">Nie podawaj przypadkowego maila</small>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Haslo</label>
+        <input type="haslo" class="form-control" id="exampleInputPassword1" placeholder="HASLO">
+    </div>
+    <div>
+        <input type="radio" name="plec" value="wartosc" checked>mezczyzna
+        <input type="radio" name="plec" value="wartosc">kobieta
+    </div>
+        <div class="form-group">
+        <label>wybierz kierunek studiow</label>
+        <select>
+            <option>Automatyka</option>
+            <option>Mechatronika</option>
+            <option>Informatyka</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlSelect2">Example multiple select</label>
+        <select multiple class="form-control" id="exampleFormControlSelect2">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Example textarea</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+</form>
+</body>
+</html>
