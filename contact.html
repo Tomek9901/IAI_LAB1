@@ -3,61 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <title>Formularz</title>
-    <style>
-                 body { background-color: yellow; }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<ul class="nav justify-content-center">
-    <li class="nav-item">
-        <a class="nav-link active" href="index.html">HOME</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="contact.html">KONTAKT</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">BLOG</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">Quiz</a>
-    </li>
-</ul>
-
+<div class="menu">
+    <a href="index.html">HOME</a>
+    <a href="contact.html">KONTAKT</a>
+    <a href="#">BLOG</a>
+    <a href="#">Quiz</a>
+</div>
+<div class="pol">
+    <div class="obr">
 <form>
-    <div class="form-grup">
-        <label for="PodajImie">Imie</label>
-        <input type="text" name="PodajImie" placeholder="Imię">
-    </div>
-    <div class="form-grup">
-        <label for="PodajNazwisko">Nazwisko</label>
-        <input type="text" name="PodajNazwisko" placeholder="Nazwisko">
-    </div>
-    <div class="form-grup">
-        <label for="WIEK">WIEK</label>
-        <input type="number" name="WIEK" placeholder="WIEK">
-    </div>
-    <div class="form-grup">
+
+        &nbsp <label>Imie</label>
+        <input size="5" type="text" name="PodajImie" placeholder="Imię"><br>
+
+        <label>Nazwisko</label>
+        <input type="text" name="PodajNazwisko" placeholder="Nazwisko"><br>
+
+        <label>WIEK</label>
+        <input type="number" name="WIEK" placeholder="WIEK"><br>
+
         <label for="exampleInputEmail1">Email adres</label>
         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Podaj email">
-        <small id="emailHelp" class="form-text text-muted">Nie podawaj przypadkowego maila</small>
-    </div>
-    <div class="form-group">
-        <label for="exampleInputPassword1">Haslo</label>
-        <input type="haslo" class="form-control" id="exampleInputPassword1" placeholder="HASLO">
-    </div>
-    <div>
+        <small id="emailHelp" class="form-text text-muted">Nie podawaj przypadkowego maila</small><br>
+
+        <label>Haslo</label>
+        <input type="haslo" name="HASLO" placeholder="PODAJ HASLO"><br>
+
         <input type="radio" name="plec" value="wartosc" checked>mezczyzna
-        <input type="radio" name="plec" value="wartosc">kobieta
-    </div>
-        <div class="form-group">
+        <input type="radio" name="plec" value="wartosc">kobieta<br>
+
         <label>Wybierz kierunek studiow</label>
         <select>
             <option>Automatyka</option>
             <option>Mechatronika</option>
             <option>Informatyka</option>
         </select>
+</form>
+    </div>
+    </div>
+<div class="mnpol">
+</div>
+    <div class="stopka">
+        <p>Copyrights © Tomasz Boro | 2019</p>
     </div>
 
-</form>
+
+
+
 </body>
 </html>

@@ -1,0 +1,86 @@
+body{
+	margin: 0 auto;
+	width: 900px;
+}
+.baner
+{
+	width: 100%;
+}
+	
+.lewy
+{
+	width:33%;
+	height: 480px;
+	float:left;
+	background-color: green;
+	color: white;
+	margin-top: 4px;
+	margin-bottom:4px;
+}
+
+
+h1
+{
+	margin-bottom:30px;
+	padding-left:20px;
+}
+
+h2
+{
+position: absolute;
+bottom: 650px;
+left: 1000px;
+color: blue
+}
+
+
+.prawy
+{
+	background-color:lightgreen;
+	width:calc(67% - 8px);
+	height: 480px;
+	margin-top: 4px;
+	margin-bottom:4px;
+	margin-left: 8px;
+	float:left;
+}
+
+.prawy1
+{
+	background-color: #99ccff;
+	width: 665px;
+	height: 480px;
+	margin-top: 4px;
+	margin-bottom:4px;
+	float:left;
+	display: none;
+}
+
+.stopka
+{
+	background-color: black;
+	width: 900px;
+	height: 20px;
+	float: left;
+	text-align: center;
+	color: yellow;
+	margin-top: 4px;
+}
+
+a
+{
+	color:white;
+}
+
+a:hover
+{ 
+	color: red;
+}
+
+#ukrytyForm, #ukrytyRys{
+	display:none;
+}
+#widocznyForm, #widocznyRys {
+	display:block;
+}
+

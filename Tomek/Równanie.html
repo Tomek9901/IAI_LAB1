@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="cssE14.css">
+	<script type="text/javascript">
+		
+		function logowanie() 
+		{
+			if (formularz.login.value=="delta" && formularz.pass.value=="trojmian")
+			{
+				document.getElementById("widocznyForm").id = "ukrytyForm";
+				document.getElementById("ukrytyRys").id = "widocznyRys";
+			}
+			else
+				alert("Błąd logowania");
+		}
+
+		function czysc()
+		{
+			document.getElementById("a").value = "";	
+			document.getElementById("b").value = "";
+			document.getElementById("c").value = "";
+			document.getElementById("delta").value = "";
+			document.getElementById("x1").value = "";
+			document.getElementById("x2").value = "";
+		}
+		
+		function oblicz()
+		{
+		let a = parseFloat(document.getElementById("a").value);
+		let b = parseFloat(document.getElementById("b").value);
+		let delta = a*b;
+		
+		document.getElementById("delta").value = delta;
+		}
+		
+		function oblicz()
+		{
+			let a = parseFloat(document.getElementById("a").value);
+			let b = parseFloat(document.getElementById("b").value);
+			let c = parseFloat(document.getElementById("c").value);
+			let delta = (b*b)-(4*a*c);
+			
+			if(delta < 0)
+				alert("Brak rozwiązań");
+					else
+						{
+						document.getElementById("delta").value = delta;
+						document.getElementById("x1").value = (((-1*b)-Math.sqrt(delta))/(2*a));
+						document.getElementById("x2").value = "";
+						if(delta>0)
+							document.getElementById("x2").value = (((-1*b)+Math.sqrt(delta))/(2*a));
+						}	
+		}		
+	</script>
+</head>
+<body>
+	<div class="baner" id="center">
+		<a href="Matematyka.html"><img src="baner.png" alt="banerek" /></a>
+		<h2><a href="Matematyka.html" style="text-decoration: none"> Matematyka </a></h2>
+	</div>
+	
+	<div class="lewy" id="center">
+		<h1><a href="Matematyka.html" style="text-decoration: none">Matematyka</a></h1>
+		<h1><a href="Zastosowanie.html" style="text-decoration: none">Zastosowanie</a></h1>
+		<h1><a href="Równanie.html" style="text-decoration: none">Równanie</a></h1>
+
+	</div>
+	
+	<div class="prawy" id="abc">
+		<section class ="prawy" id="widocznyForm" >
+		<form name="formularz">
+			Login: <input type="text" name="login" /> <br>
+			Hasło: <input type="password" name="pass" /> <br><br>
+			<input type="button" value="Logowanie..." onClick="logowanie()" />
+		</form>
+	</section>
+	
+	<section class="" id="ukrytyRys">
+		<h3>&nbsp Rozwiązanie równania kwadratowego: </h3>
+		<form action="1"><div style="margin-left:30px; width:33%; float:left">
+		&nbsp Wsp a: &nbsp <input type="text" id="a" size="10px" name="a"> <br><br><br>
+		&nbsp <input type="button" onClick="oblicz()" value="oblicz"> <br><br><br>
+		&nbsp Delta: &nbsp <input type="text" id="delta" name="delta"> <br>
+		</div>
+		<div style="margin-right:30px; width:33%;float:right">
+		&nbsp Wsp b:&nbsp <input type="text" id="b" size="10px" name="b"> 
+		&nbsp &nbsp Wsp c: <br> <input type="text" id="c" size="10px" name="c"><br><br><br>
+		&nbsp <input type="button" value="Czysc" onClick="czysc()"/> <br><br><br>
+		&nbsp X1: &nbsp <input type="text" id="x1" name="x1"> <br>
+		&nbsp X2: &nbsp <input type="text" id="x2" name="x2"> <br>
+		</div>
+		</form>
+	</section>
+	</div>
+		
+	<div class="stopka" id="center">
+		PESEL
+	</div>
+
+	
+	
+</body>
+</html>
